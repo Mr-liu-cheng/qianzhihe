@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/output.loader.js";
       var config = {
-        dataUrl: buildUrl + "/output.data.unityweb",
-        frameworkUrl: buildUrl + "/output.framework.js.unityweb",
-        codeUrl: buildUrl + "/output.wasm.unityweb",
+        dataUrl: buildUrl + "/output.data",
+        frameworkUrl: buildUrl + "/output.framework.js",
+        codeUrl: buildUrl + "/output.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "19urpShader",
@@ -91,7 +91,7 @@
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
 
-        //unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
